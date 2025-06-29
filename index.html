@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,49 +46,123 @@
       font-weight: bold;
       color: #fff;
     }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      vertical-align: bottom;
+      background-color: #000 !important;
+      height: 100;
+    }
+    .particles-js-canvas-el {
+      background-color: #000 !important;
+      height: 150vh;
+      width: 100vh;
+    }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 120vh;
+      background-color: #000000;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <h1>Shivraj Roman</h1>
-    <p>Data Engineer | Cloud Enthusiast</p>
-    <a class="button" href="resume.pdf" download>Download Resume</a>
-  </header>
+  <div id="particles-js">
+    <div style="position: relative; z-index: 1;">
+      <header class="hero">
+        <h1>Shivraj Roman</h1>
+        <p>Data Engineer | Cloud Enthusiast</p>
+        <a class="button" href="resume.pdf" download>Download Resume</a>
+      </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>A passionate data engineer with experience in building cloud-native data solutions using Azure, Python, and Apache Spark. Skilled in ADF, Data Lakes, SQL, and pipeline orchestration, I enjoy solving real-world data problems with efficient solutions.</p>
-  </section>
+      <section>
+        <h2>About Me</h2>
+        <p>A passionate data engineer with experience in building cloud-native data solutions using Azure, Python, and Apache Spark. Skilled in ADF, Data Lakes, SQL, and pipeline orchestration, I enjoy solving real-world data problems with efficient solutions.</p>
+      </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li><strong>Languages:</strong> Python, SQL</li>
-      <li><strong>Tools/Cloud:</strong> Azure (ADF, Data Lake, Synapse, Databricks), Git, Power BI</li>
-      <li><strong>Others:</strong> Apache Spark, Data Warehousing, File & Exception Handling</li>
-    </ul>
-  </section>
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li><strong>Languages:</strong> Python, SQL</li>
+          <li><strong>Tools/Cloud:</strong> Azure (ADF, Data Lake, Synapse, Databricks), Git, Power BI</li>
+          <li><strong>Others:</strong> Apache Spark, Data Warehousing, File & Exception Handling</li>
+        </ul>
+      </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul class="projects">
-      <li>
-        <span class="project-title">Event Scheduler System</span> – Flask-based app for managing events with reminders and recurring events.
-        <!-- Optional: <a href="#">GitHub</a> -->
-      </li>
-      <li>
-        <span class="project-title">Azure Data Pipeline Project</span> – Built end-to-end pipeline using ADF, Data Lake, and Synapse.
-      </li>
-      <li>
-        <span class="project-title">Power BI Dashboard</span> – Created interactive dashboards with KPI metrics and visuals from real estate data.
-      </li>
-    </ul>
-  </section>
+      <section>
+        <h2>Projects</h2>
+        <ul class="projects">
+          <li>
+            <span class="project-title">Event Scheduler System</span> – Flask-based app for managing events with reminders and recurring events.
+          </li>
+          <li>
+            <span class="project-title">Azure Data Pipeline Project</span> – Built end-to-end pipeline using ADF, Data Lake, and Synapse.
+          </li>
+          <li>
+            <span class="project-title">Power BI Dashboard</span> – Created interactive dashboards with KPI metrics and visuals from real estate data.
+          </li>
+        </ul>
+      </section>
 
-  <footer>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:shivrajroman@gmail.com">shivrajroman@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/shivraj-roman">github.com/shivraj-roman</a></p>
-  </footer>
+      <footer>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shivrajroman@gmail.com">shivrajroman@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/shivraj-roman">github.com/shivraj-roman</a></p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Load and configure particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#00ff5a" },
+        "shape": { "type": "circle", "stroke": { "width": 1, "color": "#00ff1e" }},
+        "opacity": { "value": 0.5 },
+        "size": {
+          "value": 4,
+          "random": true,
+          "anim": { "enable": true, "speed": 14, "size_min": 0.1 }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        },
+        "modes": {
+          "repulse": { "distance": 200, "duration": 0.4 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
 </body>
 </html>
