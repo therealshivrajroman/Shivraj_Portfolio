@@ -2,146 +2,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shivraj Roman | Data Engineer</title>
-
-  <!-- Bootstrap & Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
-      background-color: #0a192f;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0a192f;
       color: #ccd6f6;
-      font-family: 'Segoe UI', sans-serif;
-      scroll-behavior: smooth;
     }
-
+    #vanta-bg {
+      width: 100%;
+      min-height: 100vh;
+    }
+    header, section, footer {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
     h1, h2 {
       color: #64ffda;
     }
-
-    .navbar {
-      background-color: #0a192f;
-    }
-
-    .nav-link {
-      color: #ccd6f6 !important;
-      font-weight: 500;
-    }
-
-    .nav-link:hover {
-      color: #64ffda !important;
-    }
-
     .hero {
       text-align: center;
-      padding: 4rem 1rem;
+      margin-top: 3rem;
     }
-
-    .btn-custom {
+    .button {
       background-color: #64ffda;
       color: #0a192f;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
       font-weight: bold;
     }
-
-    .social-icons a {
+    .projects li, .skills li {
+      margin-bottom: 1rem;
+    }
+    footer a {
+      margin-right: 1rem;
       color: #64ffda;
-      margin: 0 10px;
-      font-size: 1.5rem;
-      transition: 0.3s;
+      text-decoration: none;
     }
-
-    .social-icons a:hover {
-      color: #ffffff;
-    }
-
-    section {
-      padding: 4rem 2rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #0a192f;
-      color: #8892b0;
+    .project-title {
+      font-weight: bold;
+      color: #fff;
     }
   </style>
 </head>
 <body>
+  <div id="vanta-bg">
+    <div style="position: relative; z-index: 1;">
+      <header class="hero">
+        <h1>Shivraj Roman</h1>
+        <p>Data Engineer | Cloud Enthusiast</p>
+        <a class="button" href="resume.pdf" download>Download Resume</a>
+      </header>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top shadow">
-    <div class="container">
-      <a class="navbar-brand text-light" href="#">Shivraj Roman</a>
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      <section>
+        <h2>About Me</h2>
+        <p>A passionate data engineer with experience in building cloud-native data solutions using Azure, Python, and Apache Spark. Skilled in ADF, Data Lakes, SQL, and pipeline orchestration, I enjoy solving real-world data problems with efficient solutions.</p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li><strong>Languages:</strong> Python, SQL</li>
+          <li><strong>Tools/Cloud:</strong> Azure (ADF, Data Lake, Synapse, Databricks), Git, Power BI</li>
+          <li><strong>Others:</strong> Apache Spark, Data Warehousing, File & Exception Handling</li>
         </ul>
-      </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul class="projects">
+          <li>
+            <span class="project-title">Event Scheduler System</span> – Flask-based app for managing events with reminders and recurring events.
+          </li>
+          <li>
+            <span class="project-title">Azure Data Pipeline Project</span> – Built end-to-end pipeline using ADF, Data Lake, and Synapse.
+          </li>
+          <li>
+            <span class="project-title">Power BI Dashboard</span> – Created interactive dashboards with KPI metrics and visuals from real estate data.
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shivrajroman@gmail.com">shivrajroman@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/shivraj-roman">github.com/shivraj-roman</a></p>
+      </footer>
     </div>
-  </nav>
+  </div>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="container">
-      <h1 class="mb-3">Shivraj Roman</h1>
-      <p class="lead">Data Engineer | Cloud Enthusiast</p>
-      <a href="resume.pdf" class="btn btn-custom mt-3" download>Download Resume</a>
-      <div class="social-icons mt-4">
-        <a href="mailto:shivrajroman@gmail.com"><i class="bi bi-envelope"></i></a>
-        <a href="https://github.com/shivraj-roman"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/shivrajroman/"><i class="bi bi-linkedin"></i></a>
-        <!-- Add more if needed -->
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        A passionate data engineer with experience in building cloud-native data solutions using Azure, Python, and Apache Spark. Skilled in ADF, Data Lakes, SQL, and pipeline orchestration, I enjoy solving real-world data problems with efficient solutions.
-      </p>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" style="background-color: #112240;">
-    <div class="container">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Event Scheduler System:</strong> Flask-based app for managing events with reminders and recurring events.</li>
-        <li><strong>Azure Data Pipeline:</strong> End-to-end solution using ADF, Data Lake, and Synapse Analytics.</li>
-        <li><strong>Power BI Dashboard:</strong> Visual analytics with KPI metrics based on real estate data.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:shivrajroman@gmail.com" class="text-decoration-none text-info">shivrajroman@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/shivraj-roman" class="text-decoration-none text-info">github.com/shivraj-roman</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/shivrajroman/" class="text-decoration-none text-info">github.com/shivraj-roman</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Shivraj Roman. All rights reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Vanta.js scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+  </script>
 </body>
 </html>
