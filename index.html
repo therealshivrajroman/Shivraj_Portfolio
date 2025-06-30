@@ -3,76 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SHIVRAJ ROMAN | Data Engineer</title>
+  <title>Shivraj Roman | Data Engineer</title>
+
+  <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       background-color: #0a192f;
       color: #ccd6f6;
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
+      scroll-behavior: smooth;
     }
+
     h1, h2 {
       color: #64ffda;
     }
+
     .navbar {
       background-color: #0a192f;
     }
+
     .nav-link {
       color: #ccd6f6 !important;
       font-weight: 500;
     }
+
     .nav-link:hover {
       color: #64ffda !important;
     }
+
     .hero {
       text-align: center;
       padding: 4rem 1rem;
-      min-height: 80vh;
-      position: relative;
-      z-index: 1;
     }
+
     .btn-custom {
       background-color: #64ffda;
       color: #0a192f;
       font-weight: bold;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 0 0 rgba(0, 255, 204, 0);
-      transition: all 0.3s ease;
-      animation: bounceIn 1.2s ease;
     }
-    .btn-custom:hover {
-      box-shadow: 0 0 12px 2px rgba(100, 255, 218, 0.6);
-      background-color: #52e0c4;
-      transform: translateY(-2px);
-    }
-    @keyframes bounceIn {
-      0% { transform: scale(0.8); opacity: 0; }
-      60% { transform: scale(1.1); opacity: 1; }
-      100% { transform: scale(1); }
-    }
+
     .social-icons a {
       color: #64ffda;
       margin: 0 10px;
       font-size: 1.5rem;
       transition: 0.3s;
     }
+
     .social-icons a:hover {
       color: #ffffff;
     }
+
     section {
       padding: 4rem 2rem;
     }
-    #projects {
-      background-color: #112240;
-    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -83,109 +70,77 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg sticky-top shadow">
-  <div class="container">
-    <a class="navbar-brand text-light" href="#home">SHIVRAJ ROMAN</a>
-    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand text-light" href="#">Shivraj Roman</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="mb-3">Shivraj Roman</h1>
+      <p class="lead">Data Engineer | Cloud Enthusiast</p>
+      <a href="resume.pdf" class="btn btn-custom mt-3" download>Download Resume</a>
+      <div class="social-icons mt-4">
+        <a href="mailto:shivrajroman@gmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/shivraj-roman"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/shivrajroman/"><i class="bi bi-linkedin"></i></a>
+        <!-- Add more if needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        A passionate data engineer with experience in building cloud-native data solutions using Azure, Python, and Apache Spark. Skilled in ADF, Data Lakes, SQL, and pipeline orchestration, I enjoy solving real-world data problems with efficient solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" style="background-color: #112240;">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Event Scheduler System:</strong> Flask-based app for managing events with reminders and recurring events.</li>
+        <li><strong>Azure Data Pipeline:</strong> End-to-end solution using ADF, Data Lake, and Synapse Analytics.</li>
+        <li><strong>Power BI Dashboard:</strong> Visual analytics with KPI metrics based on real estate data.</li>
       </ul>
     </div>
-  </div>
-</nav>
+  </section>
 
-<!-- Hero -->
-<section class="hero" id="home">
-  <div class="container position-relative" style="z-index: 1;">
-    <h1 class="mb-3">SHIVRAJ ROMAN</h1>
-    <p class="lead"><strong>Data Engineer</strong></p>
-    <a href="SHIVRAJ ROMAN_Data Engineer_CV.pdf" class="btn btn-custom mt-3" download>Download Resume</a>
-    <div class="social-icons mt-4">
-      <a href="mailto:shivrajroman@gmail.com"><i class="bi bi-envelope"></i></a>
-      <a href="https://github.com/shivraj-roman" target="_blank"><i class="bi bi-github"></i></a>
-      <a href="https://linkedin.com/in/shivrajroman" target="_blank"><i class="bi bi-linkedin"></i></a>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:shivrajroman@gmail.com" class="text-decoration-none text-info">shivrajroman@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/shivraj-roman" class="text-decoration-none text-info">github.com/shivraj-roman</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/shivrajroman/" class="text-decoration-none text-info">github.com/shivraj-roman</a></p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- About -->
-<section id="about">
-  <div class="container">
-    <h2>Career Summary</h2>
-    <p>
-      Post graduate in Big Data Analytics from CDAC Mumbai with strong foundation in Python, SQL, Cloud Computing, PySpark, ML, and Data Visualization. Hands-on experience with real-time projects using Azure Databricks, Spark, and Power BI. Skilled in process optimization, gap finding, and backlog planning to deliver reliable, scalable data solutions.
-    </p>
-  </div>
-</section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shivraj Roman. All rights reserved.</p>
+  </footer>
 
-<!-- Skills -->
-<section id="skills">
-  <div class="container">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> SQL, Python, R</li>
-      <li><strong>Big Data Frameworks:</strong> Spark, PySpark, SparkSQL, Hadoop</li>
-      <li><strong>Cloud Platforms:</strong> Azure Data Factory, Azure Data Lake, Databricks, AWS</li>
-      <li><strong>Visualization:</strong> Power BI, Tableau</li>
-      <li><strong>Tools:</strong> GitHub, Excel, PowerPoint</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Fraud Detection Pipeline:</strong> Built scalable ETL with Azure Databricks, ML (Logistic Regression, KNN), Delta Lake, and real-time Power BI dashboards via Streamlit.</li>
-      <li><strong>Cipla Stock Analysis:</strong> Used PySpark ETL and Power BI to reveal trends from stock data; implemented moving averages and volume insights.</li>
-      <li><strong>IMDb Case Study:</strong> Scraped and analyzed film data with Python & Pandas; visualized profitability patterns by genre using Power BI.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Education -->
-<section id="education">
-  <div class="container">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>PG Diploma in Big Data Analytics</strong> – CDAC Mumbai (Aug 2024 – Feb 2025)</li>
-      <li><strong>Bachelor’s in Engineering</strong> – Pune University (2016 – 2020)</li>
-    </ul>
-    <h3 class="mt-4">Certifications</h3>
-    <ul>
-      <li>Python, SQL, Java (HackerRank)</li>
-      <li>Databricks Fundamentals</li>
-      <li>Microsoft Excel (SimpliLearn)</li>
-    </ul>
-    <h3 class="mt-4">Interests</h3>
-    <p>Travelling · Social Services · Market Research · Banking · Trading · Finance</p>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:shivrajroman@gmail.com" class="text-decoration-none text-info">shivrajroman@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/shivraj-roman" class="text-decoration-none text-info">github.com/shivraj-roman</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/shivrajroman" class="text-decoration-none text-info">linkedin.com/in/shivrajroman</a></p>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 SHIVRAJ ROMAN. All rights reserved.</p>
-</footer>
-
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
